@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pro README Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📝 Pro README.md Generator</h1>
+
+    <form id="readmeForm">
+      <input type="text" id="title" placeholder="Enter your project title" required>
+      <textarea id="description" placeholder="What does your project do?" required></textarea>
+      <textarea id="features" placeholder="List features (comma separated)" required></textarea>
+      <textarea id="usage" placeholder="How do users use this project?" required></textarea>
+      <textarea id="technologies" placeholder="What technologies are used? (comma separated)"></textarea>
+      <button type="submit">Generate README</button>
+    </form>
+
+    <div class="output-section">
+      <h2>📄 Generated README.md</h2>
+      <pre id="output"></pre>
+      <button onclick="copyToClipboard()">📋 Copy</button>
+      <button onclick="downloadReadme()">⬇️ Download</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
